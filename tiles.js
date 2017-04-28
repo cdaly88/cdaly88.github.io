@@ -23,20 +23,20 @@ var map = {
   }
 };
 
-Game.load = function () {
-    return [
-        Loader.loadImage('tileset', '../assets/tileset.png')
-    ];
-};
+// Game.load = function () {
+    // return [
+        // Loader.loadImage('tileset', '../assets/tileset.png')
+    // ];
+// };
 
-Game.init = function () {
-    this.tileMap = Loader.getImage('tileset');
-};
+// Game.init = function () {
+    // this.tileMap = Loader.getImage('tileset');
+// };
 
-Game.update = function (delta) {
-};
+// Game.update = function (delta) {
+// };
 
-Game.render = function () {
+displayMap = function () {
     for (var c = 0; c < map.cols; c++) {
         for (var r = 0; r < map.rows; r++) {
             var tile = map.getTile(c, r);
@@ -56,3 +56,5 @@ Game.render = function () {
         }
     }
 };
+
+displayMap();
